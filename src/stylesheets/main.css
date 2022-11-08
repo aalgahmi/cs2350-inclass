@@ -1,3 +1,71 @@
 /* Your styles go here */
 @import url("bootstrap/dist/css/bootstrap.min.css");
 @import url("bootstrap-icons/font/bootstrap-icons.css");
+
+
+header {
+  background-color: gold;
+}
+
+footer {
+  background-color: lightgreen;;
+}
+
+.primary {
+  background-color: skyblue;
+  text-align: center;
+  height: calc(100vh - 200px);
+  line-height:calc(100vh - 200px);
+}
+
+.secondary {
+  background-color: lightgrey;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.aside {
+  display: none;
+}
+
+header, footer {
+  height: 50px;
+  line-height: 50px;
+}
+
+
+/* Our break point: 600px */
+/* This is a media query to make this page 
+   reponsive */
+@media screen and (min-width: 600px){
+  header {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  ul.left {
+    flex: 1;
+    display: flex;
+    list-style: none;
+    padding: 10px;
+  }
+
+  ul.right {
+    display: flex;
+    list-style: none;
+  }
+  .aside {
+    display: block;
+    flex: 1;
+    background-color: rgb(234, 201, 201);
+  }
+
+  .content {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .main {
+    flex: 3;
+  }
+}

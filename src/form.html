@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylesheets/form.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <form method="POST" class="contact-form">
+    <h1>Contact Us Form</h1>
+    <div class="field">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fname" placeholder="Type your first name here" required>
+    </div>
+    <div class="field">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lname">
+    </div>
+    <div class="field">
+      <label for="uname">Username</label>
+      <input type="text" id="uname" name="uname">
+    </div>
+    <div class="field">
+      <label for="pwd">Password</label>
+      <input type="password" id="pwd" name="pword">
+    </div>
+    <div class="field">
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob">
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="johndoe@example.com">
+    </div>
+
+    <div class="field">
+      <label for="street">Street</label>
+      <input type="text" id="street" name="street" placeholder="include apt numbers here">
+    </div>
+
+    <div class="field">
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" placeholder="">
+    </div>
+    <div class="field">
+      <label for="state">State</label>
+      <select name="state" id="state" placeholder="Select a state">
+        <option value="">Select a state</option>
+        <option value="AL">Alabama</option>
+        <option value="AZ">Arizona</option>
+        <option value="UT">Utah</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="country">Country</label>
+      <select name="country" id="country" multiple>
+        <option value="CA">Canada</option>
+        <option value="US">United States</option>
+        <option value="GR">Germany</option>
+        <option value="FR">France</option>
+        <option value="MX">Mexico</option>
+      </select>
+    </div>
+
+    <div class="field-inline">
+      <input type="checkbox" name="football" id="football">
+      <label for="football">Sports - Football</label>
+      
+    </div>
+    <div class="field-inline">
+      <label for="soccer">Sports - Soccer</label>
+      <input type="checkbox" name="soccer" id="soccer">
+    </div>
+
+    <div class="field-inline">
+      <input type="radio" id="single" name="status">
+      <label for="single">Single</label>
+      <input type="radio" id="married" name="status">
+      <label for="married">Married</label>
+    </div>
+    <div class="field-actions">
+      <button type="reset">Reset</button>
+      <button type="button">Cancel</button>
+      <button type="submit">Submit</button>
+    </div>
+
+    <script type="module" src="./javascripts/demo.js"></script>
+  </form>
+</body>
+</html>

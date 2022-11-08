@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylesheets/week10.css">
+  <script type="module" src="./javascripts/week10.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Local Library</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid bg-dark text-light py-5">
+    <img class="w-50 px-5 float-end" src="./images/undraw_road_to_knowledge_m8s0.svg" alt="">
+    <h1 class="display-5">Welcome to our local library</h1>
+    <p class="lead fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero exercitationem magni ea placeat
+      nemo! Dicta autem corporis quaerat quo labore doloribus vel facilis. Impedit illo beatae fugiat, quos hic
+      doloremque?</p>
+    <a href="#" class="btn btn-info btn-lg px-5">Learn more about the services we offer</a>
+  </div>
+
+  <div class="container">
+    <h1>Guest Book</h1>
+    <form method="post">
+      <div class="mb-3">
+        <label for="fname" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="fname" name="fname" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="lname" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="lname" name="lname">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <h1>Registered Guests</h1>
+    <table class="table" id="guests">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <footer class="container-fluid bg-secondary text-center py-4 text-light">
+    &copy; All rights reserved - CS 2350 - Your name
+  </footer>
+</body>
+
+</html>
